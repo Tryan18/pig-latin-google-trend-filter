@@ -3,7 +3,9 @@ PigLatin google-trend filter
 <br>
 A filter for google trend keywords developed in pig latin.
 <br>
+<br>
 <b>Idea</b>
+<br>
 <br>
 The increasingly growing number of information around internet have ended in the need of different tools as search engines to simplify the user’s process of finding relevant data.
 <br>
@@ -32,25 +34,25 @@ After installation download the Pig Latin script (run.pig) together with:
 Keyword_Count.java 
 Keyword_Ratio.java
 <br>
-As example input google trend files you can download them here as well.
-These are:
-GoogleTrend_NL.csv
-GoogleTrend_US.csv
-GoogleTrend_WORLD.csv
+As example input google trend files you can download them here as well.<br>
+These are:<br>
+GoogleTrend_NL.csv<br>
+GoogleTrend_US.csv<br>
+GoogleTrend_WORLD.csv<br>
 <br>
-Then download the convert.py script.
-This is for converting the csv files into a readable format for using it in Pig Latin.
+Then download the convert.py script.<br>
+This is for converting the csv files into a readable format for using it in Pig Latin.<br>
 <br>
 <b>How to Run:</b>
 <br>
-./convert.py '/home/user/GoogleTrend_US.csv' > GT_US.log
-./convert.py '/home/user/GoogleTrend_NL.csv' > GT_NL.log
-./convert.py '/home/user/GoogleTrend_WORLD.csv' > GT_WORLD.log
-mkdir udf_KW
-cp Keyword_Count.java ./udf_KW
-cp Keyword_Ratio.java ./udf_KW
-javac -cp ./pig-0.10.0.jar udf_KW/Keyword_Count.java
-javac -cp ./pig-0.10.0.jar udf_KW/Keyword_Ratio.java
-jar -cf udf_KW.jar udf_KW
-pig -x local run.pig > result
+./convert.py '/home/user/GoogleTrend_US.csv' > GT_US.log<br>
+./convert.py '/home/user/GoogleTrend_NL.csv' > GT_NL.log<br>
+./convert.py '/home/user/GoogleTrend_WORLD.csv' > GT_WORLD.log<br>
+mkdir udf_KW<br>
+cp Keyword_Count.java ./udf_KW<br>
+cp Keyword_Ratio.java ./udf_KW<br>
+javac -cp ./pig-0.10.0.jar udf_KW/Keyword_Count.java<br>
+javac -cp ./pig-0.10.0.jar udf_KW/Keyword_Ratio.java<br>
+jar -cf udf_KW.jar udf_KW<br>
+pig -x local run.pig > result<br>
 
