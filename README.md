@@ -19,7 +19,7 @@ References
 [2]	Howard, F., & Komili, O. (2010). Poisoned search results: How hackers have automated search engine poisoning attacks to distribute malware. Sophos Technical Papers.
 [3]	Landesman, M. (n.d.). Search Engine Poisoning. About.com. Retrieved from: http://antivirus.about.com/od/securitytips/a/Search-Engine-Poisoning.htm
 
-How to setup:
+<b>How to setup:</b>
 First download & install Pig Latin -> http://apache.mirror1.spango.com/pig/
 Preferable version 0.10.1
 After installation download the Pig Latin script (run.pig) together with:
