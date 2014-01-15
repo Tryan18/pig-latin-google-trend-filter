@@ -1,4 +1,4 @@
-PigLatin google-trend filter
+PigLatin Google Trend filter
 =============================
 <br>
 A filter for google trend keywords developed in pig latin.
