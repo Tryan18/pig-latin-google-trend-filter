@@ -36,9 +36,9 @@ Then download the convert.py script.
 This is for converting the csv files into a readable format for using it in Pig Latin.
 
 How to Run:
-./convert.python.py '/home/user/GoogleTrend_US.csv' > GT_US.log
-./convert.python.py '/home/user/GoogleTrend_NL.csv' > GT_NL.log
-./convert.python.py '/home/user/GoogleTrend_WORLD.csv' > GT_WORLD.log
+./convert.py '/home/user/GoogleTrend_US.csv' > GT_US.log
+./convert.py '/home/user/GoogleTrend_NL.csv' > GT_NL.log
+./convert.py '/home/user/GoogleTrend_WORLD.csv' > GT_WORLD.log
 
 mkdir udf_KW
 cp Keyword_Count.java ./udf_KW
