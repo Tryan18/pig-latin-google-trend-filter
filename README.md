@@ -28,11 +28,12 @@ The main idea with the current project is that, using Big Data and different sub
 <br>
 <b>How to setup:</b>
 <br>
-First download & install Pig Latin -> http://apache.mirror1.spango.com/pig/
-Preferable version 0.10.1
-After installation download the Pig Latin script (run.pig) together with:
-Keyword_Count.java 
-Keyword_Ratio.java
+Please install the VM of Norvig -> http://norvigaward.github.io/vm.html<br>
+First download & install Pig Latin -> http://apache.mirror1.spango.com/pig/<br>
+Preferable version 0.10.1<br>
+After installation download the Pig Latin script (run.pig) together with:<br>
+Keyword_Count.java <br>
+Keyword_Ratio.java<br>
 <br>
 As example input google trend files you can download them here as well.<br>
 These are:<br>
