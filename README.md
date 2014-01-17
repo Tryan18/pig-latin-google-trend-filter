@@ -32,8 +32,8 @@ Please install the VM of Norvig -> http://norvigaward.github.io/vm.html<br>
 First download & install Pig Latin -> http://apache.mirror1.spango.com/pig/<br>
 Preferable version 0.10.1<br>
 After installation download the Pig Latin script (run.pig) together with:<br>
-Keyword_Count.java <br>
-Keyword_Ratio.java<br>
+Get_Body.java <br>
+FindKeywords.java<br>
 <br>
 As example input google trend files you can download them here as well.<br>
 These are:<br>
@@ -50,10 +50,10 @@ This is for converting the csv files into a readable format for using it in Pig 
 ./convert.py '/home/user/GoogleTrend_NL.csv' > GT_NL.log<br>
 ./convert.py '/home/user/GoogleTrend_WORLD.csv' > GT_WORLD.log<br>
 mkdir udf_KW<br>
-cp Keyword_Count.java ./udf_KW<br>
-cp Keyword_Ratio.java ./udf_KW<br>
-javac -cp ./pig-0.10.0.jar udf_KW/Keyword_Count.java<br>
-javac -cp ./pig-0.10.0.jar udf_KW/Keyword_Ratio.java<br>
+cp Get_Body.java ./udf_KW<br>
+cp FindKeywords.java ./udf_KW<br>
+javac -cp ./pig-0.10.0.jar udf_KW/Get_Body.java.java<br>
+javac -cp ./pig-0.10.0.jar udf_KW/FindKeywords.java<br>
 jar -cf udf_KW.jar udf_KW<br>
 pig -x local run.pig > result<br>
 
