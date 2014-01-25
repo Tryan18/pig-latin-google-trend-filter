@@ -55,5 +55,13 @@ cp FindKeywords.java ./udf_KW<br>
 javac -cp ./pig-0.10.0.jar udf_KW/Get_Body.java.java<br>
 javac -cp ./pig-0.10.0.jar udf_KW/FindKeywords.java<br>
 jar -cf udf_KW.jar udf_KW<br>
-pig -x local run.pig > result<br>
+pig -x local run.pig > result_pig<br>
+<br>
+<b>Checking for url Blacklisting</b><br>
+Get the latest URL Blacklist -> http://urlblacklist.com/?sec=download<br>
+Extract.<br>
+Use convert_blacklist.py to combine all urls and domains into one file<br>
+Use convert_output.py to convert the "result_pig" file for find_blacklist_keywords.pig<br>
+
+
 
